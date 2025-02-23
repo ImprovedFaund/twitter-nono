@@ -1,0 +1,172 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        sans-serif;
+    background-color: #f5f8fa;
+    color: #14171a;
+}
+
+/* Layout */
+.layout {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #eaeaea;
+}
+
+.logo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1da1f2;
+    margin-bottom: 32px;
+    margin-top: 15px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-link {
+    padding: 10px;
+    text-align: center;
+    color: #14171a;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #e8f5fe;
+    color: #1da1f2;
+    transition: 0.2s;
+}
+
+/* Main content */
+.main-content {
+    max-width: 600px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left: 50px;
+}
+
+/* Tweet components */
+.tweet-input-container {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 12px;
+}
+
+.tweet-input:focus {
+    outline: none;
+    border-color: #1da1f2;
+}
+
+.tweet-button {
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tweet-button:hover {
+    background-color: #1a91da;
+    transition: 0.2s;
+}
+
+/* Tweet card */
+.tweet-card {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #eaeaea;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.tweet-time {
+    color: #657786;
+    font-size: 14px;
+}
+
+.tweet-content {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.tweet-actions {
+    display: flex;
+    gap: 16px;
+    color: #657786;
+}
+
+.heart-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.heart-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.like-button:hover {
+    background-color: #e0245e;
+    transition: 0.2s;
+}
