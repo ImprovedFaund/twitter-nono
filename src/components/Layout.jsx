@@ -21,17 +21,15 @@ function Layout() {
             <div className="layout">
                 {/* Sidebar */}
                 <div className="sidebar">
-                    <div>
-                        <h1 className="logo">Type.</h1>
-                        <nav className="nav-menu">
-                            <Link to="/" className="nav-link">
-                                <HomeIcon width="36px" />
-                            </Link>
-                            <Link to="/profile" className="nav-link">
-                                <UserIcon width="36px" />
-                            </Link>
-                        </nav>
-                    </div>
+                    <h1 className="logo">Type.</h1>
+                    <nav className="nav-menu">
+                        <Link to="/" className="nav-link">
+                            <HomeIcon width="36px" />
+                        </Link>
+                        <Link to="/profile" className="nav-link">
+                            <UserIcon width="36px" />
+                        </Link>
+                    </nav>
                 </div>
 
                 {/* Main content */}
