@@ -9,7 +9,7 @@ const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 function App() {
     return (
         <ClerkProvider publishableKey={clerkPubKey}>
-            <Router>
+            <Router basename="/twitter-nono">
                 <Routes>
                     <Route path="/sign-in" element={<SignIn />} />
                     <Route path="/sign-up" element={<SignUp />} />
